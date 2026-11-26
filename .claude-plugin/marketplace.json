@@ -1,0 +1,11 @@
+{
+  "name": "walkthrough-video",
+  "owner": { "name": "walkthrough-video maintainers" },
+  "plugins": [
+    {
+      "name": "walkthrough-video",
+      "source": "./",
+      "description": "Record a real web app and turn a new feature or change into a captioned walkthrough video."
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "maxSeconds": 30,
+  "brand": { "primary": "#3554d1" },
+  "scenes": [
+    { "type": "title", "heading": "Adding a task", "sub": "A short example" },
+    { "type": "chapter", "title": "Add a task" },
+    { "type": "shot", "frame": "t1", "caption": "Click the task box", "click": true },
+    { "type": "shot", "frame": "t2", "caption": "Type the task, then click Add task", "click": true, "typing": true },
+    { "type": "shot", "frame": "t3", "caption": "The task appears in the list", "sound": "bell" },
+    { "type": "end", "heading": "That is it." }
+  ]
+}

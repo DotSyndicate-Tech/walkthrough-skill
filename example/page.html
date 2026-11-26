@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Demo app</title>
+<style>
+  body { font: 20px/1.5 system-ui, sans-serif; margin: 0; background: #f5f6f8; color: #222; }
+  main { max-width: 760px; margin: 120px auto; background: #fff; padding: 48px; border-radius: 16px; }
+  input, button { font: inherit; padding: 12px 16px; border-radius: 8px; border: 1px solid #ccc; }
+  button { background: #3554d1; color: #fff; border: 0; cursor: pointer; }
+  li { padding: 8px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Tasks</h1>
+  <form><input id="task" placeholder="New task" required> <button type="submit">Add task</button></form>
+  <ul id="list"><li>Write the report</li></ul>
+</main>
+<script>
+  document.querySelector("form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    const item = document.createElement("li");
+    item.textContent = document.querySelector("#task").value;
+    document.querySelector("#list").append(item);
+    event.target.reset();
+  });
+</script>
+</body>
+</html>
