@@ -1,4 +1,4 @@
-// node --test skills/walkthrough-video/scripts/test.mjs
+// node --test skills/walkthrough-skill/scripts/test.mjs
 import assert from "node:assert/strict";
 import { mkdtempSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";

@@ -1,9 +1,9 @@
 ---
-name: walkthrough-video
-description: Make a captioned walkthrough video of a new feature or change in a web app, recorded from the real app running locally. Use when the user asks for a walkthrough, tutorial, how-to or release video of something in their project, or types /walkthrough-video.
+name: walkthrough-skill
+description: Make a captioned walkthrough video of a new feature or change in a web app, recorded from the real app running locally. Use when the user asks for a walkthrough, tutorial, how-to or release video of something in their project, or types /walkthrough-skill.
 ---
 
-# Walkthrough video
+# Walkthrough skill
 
 Turn a feature or change into a 1920x1080 video that teaches someone to use it: title, worked example, real screens with a moving cursor and captions, rules, end card. Optionally a short PDF guide from the same screenshots.
 

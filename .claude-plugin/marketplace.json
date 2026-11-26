@@ -1,10 +1,10 @@
 {
-  "name": "walkthrough-video",
+  "name": "walkthrough-skill",
   "description": "Walkthrough videos of web app features, recorded from the real app.",
-  "owner": { "name": "walkthrough-video maintainers" },
+  "owner": { "name": "walkthrough-skill maintainers" },
   "plugins": [
     {
-      "name": "walkthrough-video",
+      "name": "walkthrough-skill",
       "source": "./",
       "description": "Record a real web app and turn a new feature or change into a captioned walkthrough video."
     }

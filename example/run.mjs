@@ -6,7 +6,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const scripts = join(here, "..", "skills", "walkthrough-video", "scripts");
+const scripts = join(here, "..", "skills", "walkthrough-skill", "scripts");
 const page = readFileSync(join(here, "page.html"));
 const server = createServer((_, res) => res.writeHead(200, { "content-type": "text/html" }).end(page));
 await new Promise((r) => server.listen(0, "127.0.0.1", r));

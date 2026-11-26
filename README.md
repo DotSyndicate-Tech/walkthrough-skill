@@ -1,25 +1,31 @@
-# walkthrough-video
+# walkthrough-skill
 
 A Claude Code plugin that turns a new feature or change in a web app into a captioned walkthrough video, recorded from the real app running on your machine.
 
 ## Install
 
-From a local copy:
+From GitHub:
 
 ```
-/plugin marketplace add D:/walkthrough-video
-/plugin install walkthrough-video@walkthrough-video
+/plugin marketplace add DotSyndicate-Tech/walkthrough-skill
+/plugin install walkthrough-skill@walkthrough-skill
 ```
 
-After the repository is on GitHub, use `/plugin marketplace add <owner>/<repo>` instead. Then restart the session or run `/reload-plugins`.
+Then restart the session or run `/reload-plugins`.
+
+To install from a local copy instead, replace the first command with the path to your clone:
+
+```
+/plugin marketplace add path/to/walkthrough-skill
+```
 
 ## Use
 
 In a project, ask for it or type the command:
 
 ```
-/walkthrough-video the new bulk import
-/walkthrough-video the last 3 commits
+/walkthrough-skill the new bulk import
+/walkthrough-skill the last 3 commits
 ```
 
 Claude interviews you, shows a storyboard, records the app with throwaway data, shows sample frames, then renders the video. It stops for your approval at the storyboard and at the frames.
@@ -29,7 +35,7 @@ Claude interviews you, shows a storyboard, records the app with throwaway data, 
 Windows, macOS or Linux with Node 22+, ffmpeg and Chrome, Edge or Chromium. Check with:
 
 ```
-node skills/walkthrough-video/scripts/doctor.mjs
+node skills/walkthrough-skill/scripts/doctor.mjs
 ```
 
 [HyperFrames](https://github.com/heygen-com/hyperframes) is downloaded through npm at a pinned version, with telemetry off. The page template loads GSAP from jsDelivr, so rendering needs a network connection.
@@ -41,7 +47,7 @@ Music and effects are read from the [brag](https://github.com/latent-spaces/brag
 ## Develop
 
 ```
-node --test skills/walkthrough-video/scripts/test.mjs
+node --test skills/walkthrough-skill/scripts/test.mjs
 node example/run.mjs
 ```
 
